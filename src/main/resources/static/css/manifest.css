@@ -1,0 +1,52 @@
+* {
+	box-sizing: inherit;
+}
+
+html {
+	background: #222222;
+	color: #ffffff;
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+	min-width: 400px;
+}
+
+tbody>tr {
+	background-color: #373737;
+}
+
+tbody>tr:nth-child(even) {
+	background-color: #272727;
+}
+
+tr.status {
+	background-color: #027a76;
+}
+
+tr.status:nth-child(odd) {
+	background-color: #026e6a;
+}
+
+tr.title {
+	background-color: #013d3b;
+}
+
+tr.department {
+	background-color: #40628a;
+}
+
+tr.department>td {
+	text-align: center;
+	font-weight: bold;
+}
+
+th, td {
+	border: 1px solid #000000;
+	padding: 0.5em;
+}
+
+td.name {
+	text-align: right;
+}

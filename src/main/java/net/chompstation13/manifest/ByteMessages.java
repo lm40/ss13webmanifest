@@ -1,0 +1,20 @@
+package net.chompstation13.manifest;
+
+public class ByteMessages {
+	public static byte[] MANIFEST = {
+		0x00, (byte) 0x83,
+		0x00, 0x0f, //15
+		0x00, 0x00, 0x00, 0x00, 0x00,
+		'?', 'm', 'a', 'n', 'i', 'f', 'e', 's', 't',
+		0x00
+	};
+
+	public static byte[] STATUS = {
+		0x00, (byte) 0x83,
+		0x00, 0x0d, //13
+		0x00, 0x00, 0x00, 0x00, 0x00,
+		'?', 's', 't', 'a', 't', 'u', 's',
+		0x00
+	};
+
+}
