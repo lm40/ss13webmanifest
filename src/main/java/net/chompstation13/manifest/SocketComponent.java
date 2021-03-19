@@ -10,8 +10,11 @@ import org.springframework.web.context.annotation.RequestScope;
 
 @Component
 @RequestScope
+@ConfigurationProperties(prefix = "socket.manifest")
 public class SocketComponent {
 	private Socket socket;
+	private String host;
+	private int port;
 
 	private boolean isConnected() {
 		if (socket == null) return false;
@@ -21,7 +24,7 @@ public class SocketComponent {
 	
 	private void open() throws IOException {
 		if (isConnected()) return;
-		socket = new Socket("ss13.chompstation13.net", 5555);
+		socket = new Socket(host, port);
 	}
 	
 	public String send(byte[] message) throws IOException {

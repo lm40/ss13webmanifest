@@ -1,5 +1,4 @@
 (function() {
-	const SERVER = "http://localhost:4583";
 	const DEPARTMENTS = {
 		"heads": "Command",
 		"sec": "Security",
@@ -33,8 +32,8 @@
 	}
 	
 	function reload() {
-		get(SERVER + "/api/status").then(printStatus).catch(console.error);
-		get(SERVER + "/api/manifest").then(printManifest).catch(console.error);
+		get("/api/status").then(printStatus).catch(console.error);
+		get("/api/manifest").then(printManifest).catch(console.error);
 	}
 	
 	function printStatus(status) {
