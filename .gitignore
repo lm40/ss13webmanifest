@@ -33,3 +33,7 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Custom ###
+misc/linux/webmanifest.service
+misc/windows/WinSW.xml
