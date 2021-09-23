@@ -13,6 +13,11 @@ table {
 	min-width: 400px;
 }
 
+div.disclaimer {
+	text-align: center;
+	margin: auto;
+}
+
 tbody>tr {
 	background-color: #373737;
 }
