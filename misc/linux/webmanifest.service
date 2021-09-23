@@ -3,7 +3,7 @@ Description=Web Manifest
 
 [Service]
 WorkingDirectory=PATHTO
-ExecStart=/usr/bin/java -jar ./build/libs/manifest-0.1.0.jar --socket.host=SS13HOSTNAME --socket.port=SS13PORT --server.port=4583
+ExecStart=/usr/bin/java -jar ./build/libs/manifest-0.1.1.jar --socket.host=SS13HOSTNAME --socket.port=SS13PORT --server.port=4583
 Type=simple
 Restart=on-failure
 RestartSec=10

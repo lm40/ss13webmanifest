@@ -5,7 +5,7 @@ Most of the java code is written by Demintika, however I'm essentially publishin
 ## Requirements
 Java JDK 11 or greater
 ## Arguments
-All arguments are formatted as such: --arg=value, so you would run: java -jar manifest-0.1.0.jar --arg1=value1 --arg2=value2... etc
+All arguments are formatted as such: --arg=value, so you would run: java -jar manifest-0.1.1.jar --arg1=value1 --arg2=value2... etc
 server.port (default: 4583): The port on which the web manifest is hosted
 socket.host: The hostname of the SS13 server to get the manifest from
 socket.port: The port on which to get the manifest from the SS13 server
