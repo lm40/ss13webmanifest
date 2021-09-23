@@ -13,7 +13,7 @@
 	}
 	
 	var table;
-	var crew_count = 0;
+	var crew_map = {};
 	
 	function init() {
 		table = document.getElementById("manifest");
@@ -47,14 +47,14 @@
 		const tbodies = document.getElementsByTagName("tbody");
 		for (let i = tbodies.length - 1; i > -1; i--) tbodies[i].remove();
 		
-		crew_count = 0;
+		crew_map = {};
 		for (const department of Object.keys(DEPARTMENTS)) try {
 			const lists = departments.get(department);
 			if (lists) printDepartment(department, lists);
 		} catch (error) {
 			console.error(error);
 		}
-		document.getElementById("crew-member").innerText = crew_count;
+		document.getElementById("crew-member").innerText = Object.keys(crew_map).length;
 	}
 	
 	function printDepartment(department, lists) {
@@ -78,7 +78,7 @@
 			const tr = document.createElement("tr");
 			tr.innerHTML =
 			`<td class="name">${o.name}</td><td class="rank">${o.rank}</td><td class="acti">${o.activity}</td>`;
-			crew_count++;
+			crew_map[o.name] = true;
 			tbody.append(tr);
 		}
 		
