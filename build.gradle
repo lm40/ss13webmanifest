@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'net.chompstation13'
-version = '0.0.1'
+version = '0.1.0'
 sourceCompatibility = '11'
 
 repositories {
@@ -14,6 +14,7 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-cache'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	
 	compile('org.springframework.boot:spring-boot-starter-web')
