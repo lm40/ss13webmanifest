@@ -41,6 +41,7 @@
 		const statusMap = new URLSearchParams(status);
 		document.getElementById("round-duration").innerText = statusMap.get("roundduration");
 		document.getElementById("online-player").innerText = statusMap.get("players");
+		document.getElementById("ingame-players").innerText = statusMap.get("ingame-players");
 	}
 	
 	function printManifest(manifest) {
