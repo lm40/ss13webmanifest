@@ -1,57 +1,57 @@
 * {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html {
-	background: #222222;
-	color: #ffffff;
+    background: #222222;
+    color: #fcfcbe;
 }
 
 table {
-	border-collapse: collapse;
-	margin: auto;
-	min-width: 400px;
+    border-collapse: collapse;
+    margin: auto;
+    min-width: 400px;
 }
 
 div.disclaimer {
-	text-align: center;
-	margin: auto;
+    text-align: center;
+    margin: auto;
 }
 
 tbody>tr {
-	background-color: #373737;
+    background-color: #373737;
 }
 
 tbody>tr:nth-child(even) {
-	background-color: #272727;
+    background-color: #272727;
 }
 
 tr.status {
-	background-color: #027a76;
+    background-color: #7e0085;
 }
 
 tr.status:nth-child(odd) {
-	background-color: #026e6a;
+    background-color: #68026e;
 }
 
 tr.title {
-	background-color: #013d3b;
+    background-color: #39013d;
 }
 
 tr.department {
-	background-color: #40628a;
+    background-color: #7a408a;
 }
 
 tr.department>td {
-	text-align: center;
-	font-weight: bold;
+    text-align: center;
+    font-weight: bold;
 }
 
 th, td {
-	border: 1px solid #000000;
-	padding: 0.5em;
+    border: 1px solid #000000;
+    padding: 0.3em;
 }
 
 td.name {
-	text-align: right;
+    text-align: right;
 }

@@ -9,7 +9,8 @@
 		"pla": "Exploration",
 		"civ": "Civilian",
 		"bot": "Silicon",
-		"misc": "Miscellaneous"
+		"misc": "Miscellaneous",
+		"off": "Offmap",
 	}
 	
 	var table;
@@ -32,8 +33,8 @@
 	}
 	
 	function reload() {
-		get("/api/status").then(printStatus).catch(console.error);
-		get("/api/manifest").then(printManifest).catch(console.error);
+		get("api/status").then(printStatus).catch(console.error);
+		get("api/manifest").then(printManifest).catch(console.error);
 	}
 	
 	function printStatus(status) {
