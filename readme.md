@@ -1,7 +1,7 @@
 # SS13 Web Manifest (Java)
 This project is an open source program which hooks over network with BYOND to allow users to view the manifest from a website.
 ## Ownership
-Most of the java code is written by Demintika, however I'm essentially publishing it for them as they do not wish to be associated with it. Any inquiries or questions may be run through me, as I will be responsible for maintaining this repository.
+This is a fork of https://github.com/cadyn/ss13webmanifest to incorporate some small Rogue Star specific changes. The credit for this really belongs to the authors of the original repository, I have just created this repository to comply with source code availability for modifications I make.
 ## Requirements
 Java JDK 11 or greater
 ## Arguments
